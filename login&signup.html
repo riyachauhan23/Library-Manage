@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login&signup.css">
+    <title>Library Management</title>
+</head>
+<body>
+    <!-- Video Section -->
+    <video src="front.mov" autoplay loop muted controls>
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Login and Signup Form Section -->
+    <div class="riya">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" id="loginUserId" class="input-field" placeholder="User Id" required>
+                <input type="password" id="loginPassword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" id="rememberMe" class="check-box"> <span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id="signup" class="input-group">
+                <input type="text" id="signupUserName" class="input-field" placeholder="User Name" required>
+                <input type="email" id="signupEmail" class="input-field" placeholder="Email Id" required>
+                <input type="password" id="signupPassword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" id="agreeTerms" class="check-box"> <span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Form Toggle -->
+    <script src="login&signup.js"></script>
+</body>
+</html>
